@@ -1,11 +1,19 @@
-<div>
-    <label for="title-input">Title:</label>
-    <input type="text" name="title-input">
-</div>
-<div>
-    <label for="content-input">Blog Content:</label>
-    <textarea name="content-input"></textarea>
-</div>
-
-<button id="sub-btn" type="submit">Create Blog Post</button>
+<article class="p-3 m-1">
+    <form class="p-3 bg-success">
+        <h4 class="text-white">
+            Create New Post
+        </h4>
+        <div class="bg-light p-3 rounded">
+            <div class="form-group">
+                <label for="title-input">Title</label>
+                <input type="text" name="title-input" class="w-100 form-control-lg">
+            </div>
+            <div class="form-group">
+                <label for="content-input">Blog Content</label>
+                <textarea name="content-input" class="w-100 form-control-lg"></textarea>
+            </div>
+            <button id="sub-btn" type="submit" class="w-100 btn bg-primary font-weight-bold text-white">Add Post</button>
+        </div>
+    </form>
+</article>
 <script src="/javascript/add-post.js"></script>
