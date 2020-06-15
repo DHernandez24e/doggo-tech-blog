@@ -10,17 +10,17 @@
 <body>
     <div>
         <header class="p-4 bg-success d-flex justify-content-between">
-            <h1 class="p-2 bg-light rounded-lg shadow border-right border-bottom">
+            <h1 class="p-2 bg-light rounded-lg shadow-lg border-right border-bottom">
                 <a href="/" class="text-decoration-none text-info">Doggo Tech Bloggo</a>
             </h1>
             <nav class="p-2 nav m-2">
                 {{#if loggedIn}}
-                <button class="p-1 mx-3 nav-item font-weight-bold btn btn-lg text-white rounded bg-info">
+                <button class="p-1 mx-3 nav-item font-weight-bold btn btn-lg text-white rounded bg-info shadow-lg">
                     <a href="/dashboard" class="font-weight-bold text-white text-decoration-none">Dashboard</a>
                 </button>
-                <button id="logout" class="p-1 mx-3 nav-item font-weight-bold btn btn-lg text-white rounded bg-info">Logout</button>
+                <button id="logout" class="p-1 mx-3 nav-item font-weight-bold btn btn-lg text-white rounded bg-info shadow-lg">Logout</button>
                 {{else}}
-                <button id="logout" class="p-1 mx-3 nav-item font-weight-bold btn btn-lg text-white rounded bg-info">
+                <button id="logout" class="p-1 mx-3 nav-item font-weight-bold btn btn-lg text-white rounded bg-info shadow-lg">
                     <a href="/login" class="font-weight-bold text-white text-decoration-none">Login</a>
                 </button>
                 {{/if}}
