@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Blog</title>
-    <link rel="stylsheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 
 <body>
     <div>
-        <header>
-            <h1>
-                <a href="/">Doggo Tech Bloggo</a>
+        <header class="p-4 bg-success d-flex justify-content-between">
+            <h1 class="p-2 bg-light rounded-lg shadow border-right border-bottom">
+                <a href="/" class="text-decoration-none text-success">Doggo Tech Bloggo</a>
             </h1>
-            <nav>
+            <nav class="p-2 nav m-2">
                 {{#if loggedIn}}
-                <a href="/dashboard">Dashboard</a>
-                <button id="logout">Logout</button>
+                <a href="/dashboard" class="p-1 mx-3 mt-1 nav-item font-weight-bold text-white">Dashboard</a>
+                <button id="logout" class="p-1 mx-3 nav-item font-weight-bold btn text-white">Logout</button>
                 {{else}}
-                <a href="/login">Login</a>
+                <a href="/login" class="p-1 mx-3 mt-1 nav-item font-weight-bold text-white">Login</a>
                 {{/if}}
             </nav>
         </header>
     </div>
-    <main>
+    <main class="container-fluid">
         {{{ body }}}
     </main>
-    <footer>Hello! This is the bottom of the page!</footer>
+    <footer class="bg-success p-2 text-center text-white font-weight-bold">Hello! This is the bottom of the page!</footer>
         {{#if loggedIn}}
         <script src="/javascript/logout.js"></script>
         {{/if}}

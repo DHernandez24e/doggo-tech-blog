@@ -1,8 +1,15 @@
-<form id="signup-form">
-    {{> form}}
-    <div>
-        <button type="submit">Sign Up!</button>
-    </div>
-</form>
-<a href="/login">Log in instead</a>
+<div class="d-flex flex-column m-3 p-2">
+    <form id="signup-form" class="p-2 m-5 border bg-success">
+        <h5 class="text-white font-weight-bold">Sign Up</h5>
+        <div class="p-3 bg-light">
+            {{> form}}
+            <button type="submit" class="p-2 btn bg-secondary font-weight-bold text-white w-100">Sign Up!</button>
+        </div>
+        <div class="p-1">
+            <a href="/login" class="font-weight-bold text-white">Log in instead</a>
+        </div>
+    </form>
+</div>
+
+
 <script src="/javascript/signup.js"></script>
