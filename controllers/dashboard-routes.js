@@ -67,9 +67,11 @@ router.get('/edit/:id', withAuth, (req, res) => {
     });
 });
 
-router.get('/add-post', (req, res) => {
+router.get('/add-post', withAuth, (req, res) => {
     if (req.session.loggedIn) {
-        res.render('add-post');
+        res.render('add-post', {
+            loggedIn: true
+        });
     }
 });
 

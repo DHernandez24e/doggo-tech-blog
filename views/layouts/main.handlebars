@@ -15,10 +15,14 @@
             </h1>
             <nav class="p-2 nav m-2">
                 {{#if loggedIn}}
-                <a href="/dashboard" class="p-1 mx-3 mt-1 nav-item font-weight-bold text-white">Dashboard</a>
-                <button id="logout" class="p-1 mx-3 nav-item font-weight-bold btn text-white">Logout</button>
+                <button class="p-1 mx-3 nav-item font-weight-bold btn btn-lg text-white rounded bg-info">
+                    <a href="/dashboard" class="font-weight-bold text-white text-decoration-none">Dashboard</a>
+                </button>
+                <button id="logout" class="p-1 mx-3 nav-item font-weight-bold btn btn-lg text-white rounded bg-info">Logout</button>
                 {{else}}
-                <a href="/login" class="p-1 mx-3 mt-1 nav-item font-weight-bold text-white">Login</a>
+                <button id="logout" class="p-1 mx-3 nav-item font-weight-bold btn btn-lg text-white rounded bg-info">
+                    <a href="/login" class="font-weight-bold text-white text-decoration-none">Login</a>
+                </button>
                 {{/if}}
             </nav>
         </header>
